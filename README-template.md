@@ -30,9 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Tip-calulator desktop view.PNG)
-![](./Tip-calulator mobile view1.PNG)
-![](./Tip-calulator mobile view.PNG)
+
+(https://user-images.githubusercontent.com/49417507/236646606-00a8b6b6-2ecc-4094-b7ac-99707f1a52a4.PNG)
+
+![Tip-calulator mobile view1](https://user-images.githubusercontent.com/49417507/236646636-6bdcccbd-1e48-41ab-916d-dfe921176bfe.PNG)
+
+![Tip-calulator mobile view2](https://user-images.githubusercontent.com/49417507/236646641-bcfe5c08-078f-4e3a-b7cd-991d7471fb87.PNG)
+
 
 Tip-calulator desktop view.PNG
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
