@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIP-CALCULATOR</title>
+    <link rel="stylesheet" href="Tip-Calculator.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- CORE CSS -->
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <section id="container"> -->
+    <div class="logo"><img src="images/logo.svg" /></div>
+
+    <div class="holder">
+      <div class="layer1">
+        <label for="Bill" id="text">Bill</label>
+
+        <div class="lab1">
+          <div class="position1">
+            <input type="text" id="Bill" placeholder="0" />
+            <img src="images/icon-dollar.svg" />
+          </div>
+        </div>
+        <br />
+        <label for="tip" id="tip1">Select Tip %</label>
+        <br />
+
+        <div class="btn1">
+          <button class="btnCalc" type="button" id="calcOne">5%</button>
+          <button class="btnCalc" type="button" id="calcTwo">10%</button>
+          <button class="btnCalc" type="button" id="calcThree">15%</button>
+
+          <button class="btnCalc" type="button" id="calcFour">25%</button>
+          <button class="btnCalc" type="button" id="calcFive">50%</button>
+          <input
+            class="btnCalc"
+            type="text"
+            id="calcSix"
+            placeholder="Custom"
+          />
+        </div>
+
+        <br />
+
+        <label for="int" id="int" class="pad">Number of People</label>
+        <span for="int" id="int2" class="hidden">can't be zero</span><br />
+
+        <div class="position1">
+          <input type="text" id="people" placeholder="0" />
+          <img src="images/icon-person.svg" />
+        </div>
+      </div>
+
+      <div class="layer2">
+        <div class="tip2">
+          <div class="amount">
+            <p id="tipAmount">Tip Amount</p>
+            <p id="person">/person</p>
+          </div>
+          <label for="amount" id="amount">$0.00</label>
+        </div>
+        <div class="total">
+          <div>
+            <p>Total</p>
+            <p id="person">/person</p>
+          </div>
+          <div>
+            <label for="Bill" id="amount2"> $0.00 </label>
+          </div>
+        </div>
+
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+    <br />
+    <!-- challenge by <a>frontEnd mentors</a> coded by <a>Fiiwe Barry</a> -->
+    <!-- </section> -->
+
+    <script src="Tip-Calculator.js"></script>
+  </body>
+</html>

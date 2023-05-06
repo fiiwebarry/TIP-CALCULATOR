@@ -1,0 +1,326 @@
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+}
+body{
+   background-color:hsl(173, 42%, 81%);
+   display:flex;
+   flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   font-weight: 700;
+   font-family: 'Space Mono', monospace;
+   /* font-family: 'Space Mono', monospace !important; */
+   margin-top: 7%;
+
+}
+.border-danger{
+   border-color:red !important;
+}
+
+#Bill:focus{
+ 
+ border-color:blue;
+ outline: none;
+}
+ #people:focus{
+border-color: blue;
+outline:none;
+} 
+#calcSix:focus{
+   border-color:blue !important;
+   outline: none;
+}
+.hidden{
+   display: none; 
+   
+}
+ .visible{
+   display:initial;
+   color: red !important; 
+}
+
+
+#calcOne.root{
+   background-color: hsl(172, 67%, 45%);
+   border-color: hsl(172, 67%, 45%); 
+}
+#calcTwo.root{
+    background-color: hsl(172, 67%, 45%);
+    border-color: hsl(172, 67%, 45%); 
+ }
+ #calcThree.root{
+    background-color: hsl(172, 67%, 45%);
+    border-color: hsl(172, 67%, 45%); 
+ }#calcFour.root{
+    background-color: hsl(172, 67%, 45%);
+    border-color: hsl(172, 67%, 45%); 
+ }#calcFive.root{
+    background-color: hsl(172, 67%, 45%);
+    border-color: hsl(172, 67%, 45%); 
+ }
+
+.logo{
+   margin-bottom:60px;
+}
+#Bill{
+   direction:rtl;
+   font-family: 'Space Mono', monospace;
+   color: hsl(183, 100%, 15%);
+}
+#people{
+   direction:rtl;
+   font-family: 'Space Mono', monospace;
+   color: #00494d;
+}
+.btnCalc{
+   background-color:hsl(183, 100%, 15%);
+   width: 31%;
+   padding:2%;
+   margin-bottom:5px;
+   border-radius: 5px;
+   color: azure;
+   font-family: 'Space Mono', monospace;
+   font-size: 24px;
+
+}
+#calcSix{
+   background-color:hsl(189, 41%, 97%);
+   border-color: hsl(189, 41%, 97%);
+   width: 29%;
+   padding:2%;
+   margin-bottom:5px;
+   border-radius: 5px;
+   color: hsl(186, 14%, 43%);
+   font-family: 'Space Mono', monospace;
+   font-size: 18px;
+   direction: rtl;
+
+}
+.holder{
+   display:flex;
+   margin: auto;
+   background-color:hsl(0, 0%, 100%);
+   width: 50%;
+   border-radius: 20px;
+   padding: 20px;
+} 
+.layer1{
+   margin-top: 20px;
+   width: 55%;
+   padding-right: 50px;
+}
+input[type="text"]{
+background-color: hsl(189, 41%, 97%);
+border-radius: 9px;
+border-color:hsl(189, 41%, 97%) ;
+width:100%;
+padding:5px;
+font-size: 24px;
+font-family: 'Space Mono', monospace;
+}
+.layer1 label{
+   color:hsl(186, 14%, 43%);
+   font-size: 14px;
+}
+.layer2 p{
+   color: azure;
+}
+#tip1{
+   margin-top: 100%;
+}
+.position1{
+   position: relative;
+}
+.position1 img{
+   position: absolute;
+   top: 16px;
+   left:10px;
+}
+.position2 img{
+   position: absolute;
+   top: 16px;
+   left: 10px;
+   /* right:1px; */
+}
+.btn1{
+
+margin-top:5%;
+margin-bottom:2%;
+}
+.btn2{
+   margin-right: 5%;
+   width:100%
+   }
+.pad{
+      padding-left: 2%;
+      padding-right:21%;
+}
+.layer2{
+   width: 45%;
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding:25px;
+    /* margin: 20px; */
+   /* align-items: center;
+   align-content: center;  */
+}
+#person{
+   color:hsl(186, 14%, 43%);
+
+}
+#amount , #amount2{
+   font-size: 50px;
+   font-weight: 900;
+   font-family: 'Space Mono', monospace;
+   color:hsl(172, 67%, 45%);
+}
+.total{
+   display:flex;
+   justify-content: space-between;
+}
+.tip2{
+   display: flex;
+   width:100%;
+   justify-content: space-between;
+   align-items: center;
+   margin-top:20px;
+   margin-bottom: 45px;
+}
+#reset{
+   width:100%;
+   background-color:hsl(172, 67%, 45%);
+   padding:10px;
+   margin-top: 110px;
+   border-radius: 5px;
+   border-color: hsl(172, 67%, 45%);
+   color:rgb(0, 73, 77);
+   font-size: 14px;
+   font-family: 'Space Mono', monospace;
+   font-weight: 700;
+}
+
+/* *smaller desktop view*/ 
+
+@media only screen and (max-width:1440px)
+{
+   .holder{
+      width:70%;
+      
+   
+}
+
+}
+@media only screen and (max-width:1018px)
+{
+   span{
+      display: block;
+      padding-left: 2%;
+      
+   
+}
+}
+@media only screen and (max-width:915px)
+{
+   .holder{
+      width:80%;
+      
+   
+}
+}
+@media only screen and (max-width:800px)
+{
+   
+.btnCalc , #calcSix{
+   width:48%;
+}
+
+}
+@media only screen and (max-width:715px)
+{
+   #amount , #amount2{
+      font-size: 42px;
+   }
+.btnCalc , #calcSix{
+   width:47%;
+}
+
+.layer2{
+   width: 55%;
+}
+.layer1{
+   width:45%;
+}
+}
+@media only screen and (max-width:630px)
+{
+   .holder{
+      width:100%;
+   }
+.btnCalc , #calcSix{
+   width:100%;
+}
+.layer1 {
+ width:40%;
+ padding-right: 30px;
+}
+.layer2{
+   width:60%;
+}
+}
+@media only screen and (max-width:510px)
+{
+   .holder{
+      width:100%;
+   }
+}
+@media only screen and (max-width:460px)
+{
+   .holder{
+   flex-direction: column;
+      
+   }
+   #reset{
+
+      margin-top:15px;
+      }
+   
+   .layer2{
+      width:100%;
+      margin-top:25px;
+   }
+   .layer1{
+      width :100%;
+      padding-right: 0px;
+      margin-top:20px;
+   }
+   .btnCalc ,#calcSix{
+      width:48%;
+   }
+}
+
+
+
+/* for mobile phones */
+@media only screen and (max-width:375px)
+{
+#reset{
+
+margin-top:15px;
+}
+#amount , #amount2{
+   font-size: 30px;
+}
+}
+
+
+
+/* #splitter{ */Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+   
